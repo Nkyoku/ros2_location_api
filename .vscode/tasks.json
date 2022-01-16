@@ -1,0 +1,27 @@
+{
+    "tasks": [
+        {
+            "label": "colcon build location_api",
+            "detail": "Build location_api package",
+            "type": "shell",
+            "command": "colcon",
+            "args": [
+                "build",
+                "--merge-install",
+                "--packages-select",
+                "location_api"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "presentation": {
+                "focus": true,
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "group": "build",
+            "problemMatcher": []
+        }
+    ],
+    "version": "2.0.0"
+}
